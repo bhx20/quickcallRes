@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <queries>
+        <package android:name="com.quickcall.dialer.debug" />
+        <package android:name="com.quickcall.dialer" />
+        <package android:name="com.quickcall.contacts.debug" />
+        <package android:name="com.quickcall.contacts" />
+        <package android:name="com.quickcall.smsmessenger.debug" />
+        <package android:name="com.quickcall.smsmessenger" />
+        <package android:name="com.quickcall.voicerecorder.debug" />
+        <package android:name="com.quickcall.voicerecorder" />
+    </queries>
+
+    <application
+        android:name="com.quickcall.res.sample.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/commons_app_name"
+        android:localeConfig="@xml/locale_config"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/TranslucentTheme"
+        tools:targetApi="tiramisu">
+
+        <activity
+            android:name="com.quickcall.res.sample.activities.MainActivity"
+            android:configChanges="orientation|uiMode"
+            android:exported="true">
+        </activity>
+
+        <activity android:name="com.quickcall.res.sample.activities.SplashActivity"
+            android:exported="false"
+            android:theme="@style/SplashTheme"/>
+
+        <activity android:name="com.quickcall.res.activities.AboutActivity"
+            android:configChanges="orientation|uiMode" />
+
+        <activity android:name="com.quickcall.res.activities.CustomizationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"/>
+
+
+
+        <activity
+            android:name="com.quickcall.res.activities.ManageBlockedNumbersActivity"
+            android:label="@string/manage_blocked_numbers" />
+
+        <activity
+            android:name="com.quickcall.res.sample.activities.TestDialogActivity"
+            android:enableOnBackInvokedCallback="true"
+            android:exported="false" />
+
+        <activity-alias
+            android:name="com.quickcall.res.sample.activities.SplashActivity.Original"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
+            android:targetActivity="com.quickcall.res.sample.activities.SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".activities.SplashActivity.One"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_one"
+            android:roundIcon="@mipmap/ic_launcher_one"
+            android:targetActivity="com.quickcall.res.sample.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".activities.SplashActivity.Two"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_two"
+            android:roundIcon="@mipmap/ic_launcher_two"
+            android:targetActivity="com.quickcall.res.sample.activities.SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".activities.SplashActivity.Three"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_three"
+            android:roundIcon="@mipmap/ic_launcher_three"
+            android:targetActivity="com.quickcall.res.sample.activities.SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".activities.SplashActivity.Four"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_four"
+            android:roundIcon="@mipmap/ic_launcher_four"
+            android:targetActivity="com.quickcall.res.sample.activities.SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".activities.SplashActivity.Five"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_five"
+            android:roundIcon="@mipmap/ic_launcher_five"
+            android:targetActivity="com.quickcall.res.sample.activities.SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".activities.SplashActivity.Six"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_six"
+            android:roundIcon="@mipmap/ic_launcher_six"
+            android:targetActivity="com.quickcall.res.sample.activities.SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".activities.SplashActivity.Seven"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_seven"
+            android:roundIcon="@mipmap/ic_launcher_seven"
+            android:targetActivity="com.quickcall.res.sample.activities.SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".activities.SplashActivity.Eight"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_eight"
+            android:roundIcon="@mipmap/ic_launcher_eight"
+            android:targetActivity="com.quickcall.res.sample.activities.SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".activities.SplashActivity.Nine"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_nine"
+            android:roundIcon="@mipmap/ic_launcher_nine"
+            android:targetActivity="com.quickcall.res.sample.activities.SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".activities.SplashActivity.Ten"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_ten"
+            android:roundIcon="@mipmap/ic_launcher_ten"
+            android:targetActivity="com.quickcall.res.sample.activities.SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".activities.SplashActivity.Eleven"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_eleven"
+            android:roundIcon="@mipmap/ic_launcher_eleven"
+            android:targetActivity="com.quickcall.res.sample.activities.SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+    </application>
+</manifest>

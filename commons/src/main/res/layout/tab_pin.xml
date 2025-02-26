@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.quickcall.res.views.PinTab xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pin_lock_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.quickcall.res.views.MyTextView
+        android:id="@+id/pin_lock_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_lock_outlined_vector"
+        android:drawablePadding="@dimen/activity_margin"
+        android:minLines="2"
+        android:paddingLeft="@dimen/activity_margin"
+        android:paddingTop="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin"
+        android:paddingBottom="@dimen/small_margin"
+        android:text="@string/enter_pin"
+        android:textAlignment="center"
+        android:textSize="@dimen/bigger_text_size"
+        app:layout_constraintBottom_toTopOf="@id/pin_lock_current_pin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.quickcall.res.views.MyTextView
+        android:id="@+id/pin_lock_current_pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:letterSpacing="1.05"
+        android:lines="1"
+        android:maxLength="10"
+        android:paddingTop="@dimen/small_margin"
+        android:paddingBottom="@dimen/small_margin"
+        android:textAlignment="center"
+        android:textSize="@dimen/big_text_size"
+        app:layout_constraintBottom_toTopOf="@id/pin_flow"
+        app:layout_constraintTop_toBottomOf="@id/pin_lock_title"
+        tools:text="****" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/pin_flow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:paddingStart="@dimen/medium_margin"
+        android:paddingEnd="@dimen/medium_margin"
+        app:constraint_referenced_ids="pin_1,pin_2,pin_3,pin_4,pin_5,pin_6,pin_7,pin_8,pin_9,pin_ok,pin_0,pin_c"
+        app:flow_horizontalGap="@dimen/medium_margin"
+        app:flow_horizontalStyle="spread_inside"
+        app:flow_maxElementsWrap="3"
+        app:flow_verticalGap="@dimen/medium_margin"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="7:6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_min="@dimen/app_lock_view_min_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pin_lock_current_pin"
+        app:layout_constraintWidth_max="@dimen/app_lock_view_max_size" />
+
+    <com.quickcall.res.views.MyTextView
+        android:id="@+id/pin_1"
+        style="@style/PinNumberStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background_16dp"
+        android:layout_margin="@dimen/tiny_margin"
+        android:text="1"
+        tools:ignore="HardcodedText" />
+
+    <com.quickcall.res.views.MyTextView
+        android:id="@+id/pin_2"
+        style="@style/PinNumberStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background_16dp"
+        android:layout_margin="@dimen/tiny_margin"
+        android:text="2"
+        tools:ignore="HardcodedText" />
+
+    <com.quickcall.res.views.MyTextView
+        android:id="@+id/pin_3"
+        style="@style/PinNumberStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background_16dp"
+        android:layout_margin="@dimen/tiny_margin"
+        android:text="3"
+        tools:ignore="HardcodedText" />
+
+    <com.quickcall.res.views.MyTextView
+        android:id="@+id/pin_4"
+        style="@style/PinNumberStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background_16dp"
+        android:layout_margin="@dimen/tiny_margin"
+        android:text="4"
+        tools:ignore="HardcodedText" />
+
+    <com.quickcall.res.views.MyTextView
+        android:id="@+id/pin_5"
+        style="@style/PinNumberStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background_16dp"
+        android:layout_margin="@dimen/tiny_margin"
+        android:text="5"
+        tools:ignore="HardcodedText" />
+
+    <com.quickcall.res.views.MyTextView
+        android:id="@+id/pin_6"
+        style="@style/PinNumberStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background_16dp"
+        android:layout_margin="@dimen/tiny_margin"
+        android:text="6"
+        tools:ignore="HardcodedText" />
+
+    <com.quickcall.res.views.MyTextView
+        android:id="@+id/pin_7"
+        style="@style/PinNumberStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background_16dp"
+        android:layout_margin="@dimen/tiny_margin"
+        android:text="7"
+        tools:ignore="HardcodedText" />
+
+    <com.quickcall.res.views.MyTextView
+        android:id="@+id/pin_8"
+        style="@style/PinNumberStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background_16dp"
+        android:layout_margin="@dimen/tiny_margin"
+        android:text="8"
+        tools:ignore="HardcodedText" />
+
+    <com.quickcall.res.views.MyTextView
+        android:id="@+id/pin_9"
+        style="@style/PinNumberStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background_16dp"
+        android:layout_margin="@dimen/tiny_margin"
+        android:text="9"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/pin_ok"
+        style="@style/PinNumberStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ripple_all_corners_16dp"
+        android:layout_margin="@dimen/tiny_margin"
+        android:contentDescription="@string/ok"
+        android:padding="@dimen/bigger_margin"
+        android:src="@drawable/ic_check"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <com.quickcall.res.views.MyTextView
+        android:id="@+id/pin_0"
+        style="@style/PinNumberStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_background_16dp"
+        android:layout_margin="@dimen/tiny_margin"
+        android:text="0"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/pin_c"
+        style="@style/PinNumberStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ripple_all_corners_16dp"
+        android:layout_margin="@dimen/tiny_margin"
+        android:contentDescription="@string/delete"
+        android:padding="@dimen/bigger_margin"
+        android:src="@drawable/ic_backspace"
+        android:visibility="invisible"
+        tools:visibility="visible"/>
+
+</com.quickcall.res.views.PinTab>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <queries>
+        <package android:name="com.quickcall.audiobook.debug" />
+        <package android:name="com.quickcall.audiobook" />
+        <package android:name="com.quickcall.voicerecorder.debug" />
+        <package android:name="com.quickcall.voicerecorder" />
+        <package android:name="com.quickcall.files.debug" />
+        <package android:name="com.quickcall.files" />
+        <package android:name="com.quickcall.dialer.debug" />
+        <package android:name="com.quickcall.dialer" />
+        <package android:name="com.quickcall.contacts.debug" />
+        <package android:name="com.quickcall.contacts" />
+        <package android:name="com.quickcall.smsmessenger.debug" />
+        <package android:name="com.quickcall.smsmessenger" />
+    </queries>
+
+    <uses-feature
+        android:name="android.hardware.faketouch"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.USE_BIOMETRIC"
+        tools:node="remove" />
+
+    <uses-permission
+        android:name="${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        tools:node="remove" />
+
+    <!-- used by Reprint -->
+    <uses-permission
+        android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
+        tools:node="remove" />
+
+    <uses-permission android:name="org.fossify.android.permission.WRITE_GLOBAL_SETTINGS" />
+
+    <application android:supportsRtl="true">
+        <activity
+            android:name="com.quickcall.res.activities.ContributorsActivity"
+            android:configChanges="orientation|uiMode"
+            android:exported="false"
+            android:label="@string/contributors"
+            android:parentActivityName="com.quickcall.res.activities.AboutActivity" />
+
+        <activity
+            android:name="com.quickcall.res.activities.FAQActivity"
+            android:configChanges="orientation|uiMode"
+            android:exported="false"
+            android:label="@string/frequently_asked_questions"
+            android:parentActivityName="com.quickcall.res.activities.AboutActivity" />
+
+        <activity
+            android:name="com.quickcall.res.activities.LicenseActivity"
+            android:configChanges="orientation|uiMode"
+            android:exported="false"
+            android:label="@string/third_party_licences"
+            android:parentActivityName="com.quickcall.res.activities.AboutActivity" />
+
+        <activity
+            android:name=".activities.ManageBlockedNumbersActivity"
+            android:configChanges="orientation|uiMode"
+            android:enableOnBackInvokedCallback="true"
+            android:exported="false"
+            android:label="@string/manage_blocked_numbers"
+            tools:targetApi="tiramisu" />
+
+        <activity
+            android:name=".activities.AppLockActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name=".receivers.RightBroadcastReceiver"
+            android:exported="true"
+            tools:ignore="ExportedReceiver">
+            <intent-filter>
+                <action android:name="com.quickcall.android.GLOBAL_CONFIG_UPDATED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

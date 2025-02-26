@@ -1,0 +1,330 @@
+<resources>
+    <string name="message">پیام</string>
+    <string name="settings_icon">نماد تنظیمات</string>
+    <string name="total_g">مجموع: %s</string>
+    <string name="last_g">آخرین: %s</string>
+    <string name="next_g">بعدی: %s</string>
+    <string name="time">زمان</string>
+    <string name="interval">فاصله</string>
+    <string name="symbols_first">ابتدا نمادها (به عنوان مثال !@#$)</string>
+    <string name="use_custom_notifications">از اعلان‌های سفارشی استفاده کنید</string>
+    <string name="turn_on_screen">روشن کردن صفحه نمایش</string>
+    <string name="hide_top_bar_when_scrolling">پنهان کردن نوار بالای برنامه هنگام پیمایش</string>
+    <string name="unread_indicator_position">موقعیت نشانگر خوانده نشده</string>
+    <string name="start">شروع</string>
+    <string name="end">پایان</string>
+
+    <!-- Support project -->
+    <string name="action_support_project">پشتیبانی پروژه</string>
+    <string name="pref_pay_summary">برنامه پولی را برای پشتیبانی از پیشرفت‌ها و ویژگی‌های اضافی دریافت کنید</string>
+    <string name="support_project_summary">یکی از برنامه های پولی ما را برای پشتیبانی از توسعه آینده و باز کردن قفل ویژگی های اضافی دریافت کنید</string>
+    <string name="learn_more">بیشتر بدانید</string>
+    <string name="themes">تم</string>
+    <string name="themes_summary">"با دقت انتخاب تم های نرم افزار ، تغییر خودکار تم و پشتیبانی از تم سیستم برای آندروید 12+ "</string>
+    <string name="color_title">رنگ</string>
+    <string name="color_summary">تنظیم دستی رنگ اولیه، لهجه، پس زمینه، متن و نوار ناوبری</string>
+    <string name="plus_title">از ما حمایت کنید</string>
+    <string name="plus_summary">با کمک شما می توانیم ویژگی های بیشتری را پیاده سازی کنیم و برنامه را حتی بهتر کنیم</string>
+    <string name="about_summary">
+        <![CDATA[
+            <i>
+            ما برای زمان شما ارزش قائل هستیم و می خواهیم بدون تبلیغات از برنامه ما لذت ببرید. اگر برای شما لذت و سودمندی به ارمغان اورده است، در نظر بگیرید که به توسعه ان کمک کنید. <br><br>
+             قدردانی از کار سخت ما و به اشتراک گذاشتن برداشت خود را، ان را به ما کمک خواهد کرد برای تحقق بخشیدن به ایده های جدید و به شما ارائه ویژگی های شگفت انگیز حتی بیشتر.
+            </i>
+        ]]></string>
+    <string name="lifebuoy_title">ما از شما حمایت خواهیم کرد</string>
+    <string name="lifebuoy_summary">اگر به دلایلی شما می توانید برنامه ما استطاعت نیست، اما واقعا می خواهید به استفاده از تمام ویژگی ها، فقط به ما ایمیل</string>
+    <string name="participants_title">Participants</string>
+    <string name="special_thanks_to">Special thanks to</string>
+    <string name="tip_kind">پشتیبانی خوب</string>
+    <string name="tip_excellent">پشتیبانی عالی</string>
+    <string name="tip_incredible">پشتیبانی عالی</string>
+    <string name="tip_jar">پشتیبانی</string>
+    <string name="any_support_unlock_all">سطح پشتیبانی پروژه موجود برای شما (یک باره، ماهانه یا سالانه) را انتخاب کنید. هر گونه پشتیبانی تمام ویژگی های برنامه را باز می کند</string>
+    <string name="one_time_purchase">پشتیبانی یکبار مصرف</string>
+    <string name="monthly">پشتیبانی ماهانه</string>
+    <string name="yearly">پشتیبانی سالانه</string>
+    <string name="unlock">Unlock</string>
+    <string name="donate_text_g">
+        <![CDATA[
+            For those who do not use Google Play, it is possible to unlock all functions of the application. <br>
+            If you like our apps which are offline, non-intrusive and have no ads, please consider supporting us in some way. We would be very grateful.<br><br>
+            Thank you!
+        ]]>
+    </string>
+
+    <!--Billing-->
+    <string name="restored_previous_purchase_please_restart">Restored previous purchase. Please restart the app to make use of all features.</string>
+    <string name="no_purchase_found">No purchase found.</string>
+    <string name="restore_purchase">Restore purchase</string>
+    <string name="restoring_purchase">Restoring purchase…</string>
+
+    <string name="no_connection">بدون اتصال</string>
+    <string name="per_month">%s/ماه</string>
+    <string name="per_year">%s/سال</string>
+
+    <string name="use_accent_color_summary">یک رنگ اضافی که در برخی از عناصر رابط کاربری استفاده می شود.</string>
+    <string name="app_icon_color_warning_g">توجه: برخی از راه اندازها ممکن است نماد برنامه سفارشی را به درستی نمایش ندهند. اگر نماد ناپدید شد، برنامه را از طریق Google Play یا از طریق ویجت آن (در صورت امکان) اجرا کنید.         پس از راه اندازی، رنگ نماد پیش فرض را بازیابی کنید. در موارد شدید، ممکن است لازم باشد برنامه را دوباره نصب کنید.</string>
+    <string name="show_contact_thumbnails_g">Show contact thumbnails</string>
+    <string name="use_icon_tabs_summary">آیکون ها به جای متن بر روی زبانه ها</string>
+    <string name="use_icon_tabs">استفاده از آیکون های زبانه</string>
+    <string name="round_play_icon_summary">نماد بازی/ مکث در رنگ اولیه رنگ آمیزی شده است</string>
+    <string name="round_play_icon">گرد بازی / مکث آیکون</string>
+    <string name="save_recordings_in_summary">با شروع از آندروید 10 ، برنامه دسترسی به فایل های خود را ندارد</string>
+    <string name="gray_theme">خاکستری</string>
+    <string name="pref_category_appearance">ظاهر</string>
+    <string name="pref_theme_summary">یک تم از پیش نصب شده را انتخاب کنید</string>
+    <string name="customization_theme_summary">انتخاب تم ها و رنگ های رابط</string>
+    <string name="recorder_g">ضبط</string>
+    <string name="player_g">بازیکن</string>
+    <string name="general">عمومی</string>
+    <string name="default_tab">زبانه پیش فرض</string>
+    <string name="color">رنگ</string>
+    <string name="black">سیاه</string>
+    <string name="black_locked">مشکی (قفل شده)</string>
+    <string name="show_dividers">نمایش تقسیم کننده ها</string>
+    <string name="colored_contacts">نمادهای رنگی مخاطبین</string>
+    <string name="contact_color_list">فهرست رنگهای اشنا</string>
+    <string name="transparent_navigation_bar">Transparent bottom navigation bar</string>
+    <string name="kids_mode">Kids mode</string>
+    <string name="kids_mode_summary">Simplified interface, choose coloring</string>
+    <string name="restart_required">Application restart required</string>
+    <string name="transparent_bar">Transparent bars</string>
+    <string name="material_design_3">Material Design 3</string>
+    <string name="material_design_3_summary">Changes the appearance of some elements of the application</string>
+    <string name="bottom_navigation_bar">Bottom navigation bar</string>
+    <string name="bottom_navigation_bar_summary">The tab bar will move to the bottom</string>
+    <string name="tab_navigation">ناوبری زبانه</string>
+    <string name="top">بالا</string>
+    <string name="bottom">زیر</string>
+    <string name="relative_date">تاریخ نسبی</string>
+    <string name="color_sim_card_icons">رنگ آیکون سیم کارت</string>
+    <string name="tabs">برگه ها</string>
+    <string name="open_search_when_open_contacts">باز کردن جستجو هنگام باز کردن زبانه اشناها</string>
+    <string name="end_search_when_changing_tab">پایان دادن به جستجو هنگام تغییر برگه ها</string>
+    <string name="change_top_bar_colour_when_scrolling">تغییر رنگ نوار بالا هنگام پیمایش</string>
+    <string name="global_theme_success_g">تم فعلی با موفقیت برای همه برنامه های مناسب اعمال شده است. هر گونه تغییر در آینده در این قالب به طور خودکار همگام سازی می شود</string>
+    <string name="enter_pattern">الگو را وارد کنید</string>
+    <string name="call_screen_background">پس‌زمینه صفحه تماس</string>
+    <string name="contact_photo">عکس تماس</string>
+    <string name="blurry_contact_photo">عکس مخاطب تار</string>
+    <string name="blurry_wallpaper">کاغذ دیواری تار</string>
+    <string name="text_cursor_color">رنگ مکاننمای متن</string>
+    <string name="top_app_bar_colored">نوار برنامه رنگی بالا</string>
+    <string name="top_app_bar_color_icon">ایکون های رنگی نوار بالای برنامه</string>
+    <string name="top_app_bar_color_title">عنوان نوار بالا برنامه رنگی</string>
+    <string name="overflow_icon">شمایل سرریز</string>
+    <string name="lines_count">شمارش خطوط</string>
+    <string name="show_button_blocked_numbers">نشان دادن دکمه برای مخفی نکردن تماسهای مسدود شده</string>
+    <string name="flash_for_alerts">فلش برای هشدار</string>
+    <string name="clean_theme_g">تمیز</string>
+    <string name="concept_theme_g">مفهوم</string>
+    <string name="default_folder_to_open_g">پوشه برای باز کردن در شروع برنامه</string>
+    <string name="last_used_g">اخرین استفاده</string>
+    <string name="home_folder_g">پوشهی خانه</string>
+    <string name="primary_sim_card">سیم کارت اصلی</string>
+    <string name="button_primary">دکمه اصلی</string>
+    <string name="button_secondary">دکمه ثانویه</string>
+    <string name="skip_archive_confirmation">Always skip archive confirmation dialog</string>
+    <string name="swipe_gestures">حرکات تند وشدید زدن</string>
+    <string name="swipe_left_action">ضربه تند وشدید زدن به چپ</string>
+    <string name="swipe_right_action">ضربه تند وشدید زدن به راست</string>
+    <string name="use_swipe_gestures">از Swipe to action استفاده کنید</string>
+    <string name="use_swipe_gestures_summary">این کار کشیدن اشاره‌ای برگه‌ها را غیرفعال می‌کند</string>
+    <string name="volume_g">جلد</string>
+    <string name="vibrate_g">لرزش</string>
+    <string name="ripple_g">موج دار شدن</string>
+    <string name="use_contact_colors">استفاده از رنگهای اشنا</string>
+
+    <string name="accent_color">رنگ لهجه</string>
+    <string name="use_accent_color">استفاده از رنگ لهجه</string>
+    <string name="system_theme_description">این تم به شما اجازه نمی دهد که رنگ ها را به صورت دستی تنظیم کنید. رنگ ها به صورت پویا بسته به تنظیمات سیستم تغییر می کنند.</string>
+    <string name="incoming_call">تماس ورودی</string>
+    <string name="outgoing_call">تماس خروجی</string>
+    <string name="missed_call">تماس از دست رفته</string>
+    <string name="unblock_number">شماره مسدود کردن</string>
+    <string name="unblock_numbers">باز کردن قفل شماره ها</string>
+    <string name="show_blocked_numbers">نمایش مسدود شده</string>
+    <string name="hide_blocked_numbers">مخفی کردن مسدود شده</string>
+    <string name="paste_g">درج</string>
+    <string name="recents">اخیر</string>
+    <string name="unblock_confirmation">آیا مطمئن هستید که می خواهید \"%s\" را رفع انسداد کنید؟</string>
+
+    <!-- Other -->
+    <string name="contact_thumbnails_size">اندازه تصاویر کوچک مخاطب</string>
+    <string name="long_click_g">کلیک طولانی %s</string>
+    <string name="purchase_simple_thank_you_g">Purchase Thank You</string>
+    <string name="copyright_g">v %1$s\nCopyright © QuickCall %2$d</string>
+    <string name="update_thank_you_g">Please update Thank You to the latest version</string>
+    <string name="faq_2_text_commons_g">
+        <![CDATA[
+            Yes, of course. You can spread the word about the apps or give good feedback and ratings. You can also help by translating the apps in a new language, or just update some existing translations.
+        You can find the guide at  , or just shoot me a message at  if you need help.
+        ]]>
+    </string>
+    <string name="faq_6_text_commons_g">این مشکل زمانی ایجاد می شود که لانچر شما به طور کامل از سفارشی سازی آیکون پشتیبانی نمی کند. در صورت دسترسی، برنامه را از طریق Google Play یا ویجت راه اندازی کنید.         پس از راه اندازی، رنگ نماد برنامه پیش فرض را بازیابی کنید. در موارد شدید، ممکن است نصب مجدد برنامه ضروری باشد.</string>
+    <string name="faq_8_text_commons_g">As your app version is no longer updated, the bugs you have maybe spotted will never be fixed. There will also be no new functions added. You can purchase the Pro version on Google Play for a small sum of money.
+        It is a one time payment, which means that once you purchase it, you will never have to pay again. Not even after getting a new device. If you won\'t like the Pro version, you can just uninstall it within a few hours and you will automatically get your money back.
+        If you want a refund anytime later, just contact us at  and you will get it.</string>
+    <string name="faq_100_title_commons_g">What is a private contact?</string>
+    <string name="faq_100_text_commons_g">A private contact is created within an application. This contact will not be visible to other applications.
+        If you uninstall the app, all private contacts will be deleted along with the app, so back up your contacts before uninstalling the app.</string>
+    <string name="faq_101_title_commons_g">How to create a private contact?</string>
+    <string name="faq_101_text_commons_g">When you create a contact, you must select the source of the contact: %s</string>
+    <string name="contributors_label_g">
+        <![CDATA[
+            This list contains everyone that noticeably helped any app within the QuickCall suite, not only this one. Translations are handled by volunteers,
+            let us know if you want to help too. The guide to translating is at <a href="">this website</a>, or just contact us at <a href="mailto:"></a> if you have any questions.
+            Thanks to all contributors and other supporters!
+        ]]>
+    </string>
+    <string name="deprecated_app_g">DEPRECATED: This version of the app is no longer maintained, get the Pro version at https://play.google.com/store/apps/details?id=com.quickcall.xxx.pro</string>
+    <string name="pro_app_refund_g">Don\'t forget that if you uninstall any paid app within 2 hours, you will automatically be refunded. If you want a refund anytime later, just contact us at  and you will get it. That makes it easy to try it out :)</string>
+
+    <!-- Contacts -->
+    <string name="add_number">افزودن شماره</string>
+    <string name="add_email">افزودن ایمیل</string>
+    <string name="add_address">افزودن آدرس</string>
+    <string name="add_im">افزودن IM</string>
+    <string name="add_event">افزودن رویداد</string>
+    <string name="add_notes">یادداشت‌ها را اضافه کنید</string>
+    <string name="add_website">افزودن وب سایت</string>
+    <string name="add_group">یک گروه اضافه کنید</string>
+    <string name="add_related_person">افزودن شخص مرتبط</string>
+
+    <string name="video_call">تماس تصویری</string>
+    <string name="screen_slide_animation">انیمیشن اسلاید صفحه</string>
+    <string name="screen_slide_animation_zoomout">بزرگنمایی</string>
+    <string name="screen_slide_animation_depth">عمق</string>
+    <string name="show_phone_numbers_g">نمایش شماره تلفن</string>
+
+    <!-- Apps -->
+    <string name="get">دریافت</string>
+    <string name="open">باز کردن</string>
+    <string name="collection">مجموعه</string>
+    <string name="collection_summary">ساخت یک مجموعه برای باز کردن برنامه</string>
+    <string name="support_project_to_unlock">پشتیبانی از پروژه برای باز کردن قفل</string>
+    <string name="limited_supply">عرضه محدود</string>
+    <string name="recommendation_dialog_contacts_g">
+        <![CDATA[
+            Hey,<br><br>
+            if you like this app, we recommend that you install our app to view and edit contacts.<br><br>
+            Thanks
+        ]]></string>
+    <string name="recommendation_dialog_dialer_g">
+        <![CDATA[
+            Hey,<br><br>
+            if you like this app, we recommend that you install our call app.<br><br>
+            Thanks
+        ]]></string>
+    <string name="recommendation_dialog_messages_g">
+        <![CDATA[
+            Hey,<br><br>
+            if you like this app, we recommend that you install our messaging app.<br><br>
+            Thanks
+        ]]></string>
+    <string name="recommendation_dialog_gallery_g">
+        <![CDATA[
+            Hey,<br><br>
+            if you like this app, we recommend that you install our photo viewing and editing app.<br><br>
+            Thanks
+        ]]></string>
+
+    <!-- SMS -->
+    <string name="copy_code">کد را کپی کنید</string>
+    <string name="action_on_message_click">عملیات روی پیام کلیک</string>
+    <string name="invert_color">رنگ را معکوس کنید</string>
+    <string name="speech_bubble">حباب گفتار</string>
+
+    <!-- Gallery -->
+    <string name="library">کتابخانه</string>
+    <string name="open_in_maps">باز کردن در Maps</string>
+
+    <!-- Dialer -->
+    <string name="all_g">همه</string>
+    <string name="message_call_later">ميتونم بعدا بهت زنگ بزنم؟</string>
+    <string name="message_on_my_way">من در راهم .</string>
+    <string name="message_cant_talk_right_now">ببخشيد، الان نميتونم حرف بزنم.</string>
+    <string name="remind_me">به من یاداوری کن</string>
+    <string name="mute">قطع</string>
+
+    <!-- Relation types -->
+    <string name="search_the_web">جستجو در اینترنت</string>
+    <string name="relation_g">ارتباط</string>
+    <string name="relations_g">شخص ذي صلة</string>
+    <string name="relation_hint_g">شخص مرتبط</string>
+    <!-- Android ContactContract.Relation types -->
+    <string name="relation_assistant_g">Assistant</string>
+    <string name="relation_brother_g">Brother</string>
+    <string name="relation_child_g">Child</string>
+    <string name="relation_domestic_partner_g">Domestic Partner</string>
+    <string name="relation_father_g">Father</string>
+    <string name="relation_friend_g">Friend</string>
+    <string name="relation_manager_g">Manager</string>
+    <string name="relation_mother_g">Mother</string>
+    <string name="relation_parent_g">Parent</string>
+    <string name="relation_partner_g">Partner</string>
+    <string name="relation_referred_by_g">Referred by</string>
+    <string name="relation_relative_g">Relative</string>
+    <string name="relation_sister_g">Sister</string>
+    <string name="relation_spouse_g">Spouse</string>
+    <!-- vCard 4.0 relation types -->
+    <string name="relation_contact_g">Contact</string>
+    <string name="relation_acquaintance_g">Acquaintance</string>
+    <string name="relation_met_g">Met</string>
+    <string name="relation_co_worker_g">Co-worker</string>
+    <string name="relation_colleague_g">Colleague</string>
+    <string name="relation_co_resident_g">Co-resident</string>
+    <string name="relation_neighbor_g">Neighbor</string>
+    <string name="relation_sibling_g">Sibling</string>
+    <string name="relation_kin_g">Kin</string>
+    <string name="relation_kin_alt_g">Relative</string>
+    <string name="relation_muse_g">Muse</string>
+    <string name="relation_crush_g">Crush</string>
+    <string name="relation_date_g">جلسه</string>
+    <string name="relation_sweetheart_g">Sweetheart</string>
+    <string name="relation_me_g">Me</string>
+    <string name="relation_agent_g">Agent</string>
+    <string name="relation_emergency_g">Emergency Contact</string>
+    <!-- Additional relation types -->
+    <string name="relation_superior_g">Boss</string>
+    <string name="relation_subordinate_g">Subordinate</string>
+    <string name="relation_husband_g">Husband</string>
+    <string name="relation_wife_g">Wife</string>
+    <string name="relation_son_g">Son</string>
+    <string name="relation_daughter_g">Daughter</string>
+    <string name="relation_grandparent_g">Grandparent</string>
+    <string name="relation_grandfather_g">Grandfather</string>
+    <string name="relation_grandmother_g">Grandmother</string>
+    <string name="relation_grandchild_g">Grandchild</string>
+    <string name="relation_grandson_g">Grandson</string>
+    <string name="relation_granddaughter_g">Granddaughter</string>
+    <string name="relation_uncle_g">Uncle</string>
+    <string name="relation_aunt_g">Aunt</string>
+    <string name="relation_nephew_g">Nephew</string>
+    <string name="relation_niece_g">Niece</string>
+    <string name="relation_father_in_law_g">Father-in-law</string>
+    <string name="relation_mother_in_law_g">Mother-in-law</string>
+    <string name="relation_son_in_law_g">Son-in-law</string>
+    <string name="relation_daughter_in_law_g">Daughter-in-law</string>
+    <string name="relation_brother_in_law_g">Brother-in-law</string>
+    <string name="relation_sister_in_law_g">Sister-in-law</string>
+
+    <!-- RuStore -->
+    <string name="billing_general_error">Error</string>
+    <string name="billing_purchase_confirm_in_progress">Confirming the purchase…</string>
+    <string name="billing_purchase_delete_in_progress">Deleting the purchase…</string>
+    <string name="billing_product_confirmed">Product confirmed/substantiated</string>
+    <string name="billing_product_deleted">Purchase canceled</string>
+    <string name="billing_subscriptions">Subscriptions</string>
+    <string name="billing_change_to_google_play">Change to Google Play</string>
+    <string name="billing_change_to_ru_store">Change to RuStore</string>
+    <string name="date">تاریخ</string>
+    <string name="starts">شروع</string>
+    <string name="ends">پایان</string>
+    <string name="time_zone">منطقه زمانی</string>
+    <string name="event_type">نوع رویداد</string>
+    <string name="availability">دسترس بودن</string>
+    <string name="attendees">شرکت کنندگان</string>
+    <string name="typeface">تایپ فیس</string>
+</resources>
