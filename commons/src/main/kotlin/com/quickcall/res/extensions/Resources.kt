@@ -52,9 +52,9 @@ fun Resources.getNavBarHeight(): Int {
 
 fun getOverflowIcon(id: Int): Int {
     return when (id) {
-        OVERFLOW_ICON_VERTICAL -> R.drawable.ic_three_dots_vector
-        OVERFLOW_ICON_HORIZONTAL_ROUND -> R.drawable.ic_more_horiz_round
-        else -> R.drawable.ic_more_horiz
+        OVERFLOW_ICON_VERTICAL -> R.drawable.ic_drag_handle_vector
+        OVERFLOW_ICON_HORIZONTAL_ROUND -> R.drawable.ic_drag_handle_vector
+        else -> R.drawable.ic_drag_handle_vector
     }
 }
 
