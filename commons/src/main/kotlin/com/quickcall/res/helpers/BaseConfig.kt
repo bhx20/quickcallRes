@@ -252,7 +252,7 @@ open class BaseConfig(val context: Context) {
         set(useDividers) = prefs.edit().putBoolean(USE_DIVIDERS, useDividers).apply()
 
     var useColoredContacts: Boolean
-        get() = prefs.getBoolean(USE_COLORED_CONTACTS, false)
+        get() = prefs.getBoolean(USE_COLORED_CONTACTS, true)
         set(useColoredContacts) = prefs.edit().putBoolean(USE_COLORED_CONTACTS, useColoredContacts).apply()
 
     var contactColorList: Int
@@ -653,7 +653,7 @@ open class BaseConfig(val context: Context) {
         set(screenSlideAnimation) = prefs.edit().putInt(SCREEN_SLIDE_ANIMATION, screenSlideAnimation).apply()
 
     var materialDesign3: Boolean
-        get() = prefs.getBoolean(MATERIAL_DESIGN3, false)
+        get() = prefs.getBoolean(MATERIAL_DESIGN3, true)
         set(materialDesign3) = prefs.edit().putBoolean(MATERIAL_DESIGN3, materialDesign3).apply()
 
     var useRelativeDate: Boolean
