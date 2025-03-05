@@ -541,10 +541,9 @@ fun BaseSimpleActivity.launchCallIntent(recipient: String, handle: PhoneAccountH
 
             if (isDefaultDialer()) {
                 val packageName = if (baseConfig.appId.contains(".debug", true)) "com.dialer.contacts.quicktruecall.debug" else "com.dialer.contacts.quicktruecall"
-                val className = "com.dialer.contacts.quicktruecall.activities.DialerActivity"
+                val className = "com.dialer.contacts.quicktruecall.act.Dialer"
                 setClassName(packageName, className)
             }
-
             launchActivityIntent(this)
         }
     }
