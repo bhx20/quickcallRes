@@ -20,6 +20,7 @@ import android.provider.DocumentsContract
 import android.provider.MediaStore
 import android.telecom.PhoneAccountHandle
 import android.telecom.TelecomManager
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.view.Window
@@ -748,6 +749,7 @@ fun BaseSimpleActivity.launchCallIntent(recipient: String, handle: PhoneAccountH
             putExtra(IS_RIGHT_APP, key)
 
             if (isDefaultDialer()) {
+                Log.i("isDefaultDialer","true")
                 val packageName = if (baseConfig.appId.contains(".debug", true)) "com.dialer.contacts.quicktruecall.debug" else "com.dialer.contacts.quicktruecall"
                 val className = "com.dialer.contacts.quicktruecall.act.Dialer"
                 setClassName(packageName, className)
