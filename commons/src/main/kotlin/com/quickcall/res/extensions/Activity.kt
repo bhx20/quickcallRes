@@ -84,14 +84,7 @@ fun Activity.appLaunched(appId: String) {
     }
 
     baseConfig.appRunCount++
-
-    if (!isTalkBackOn()) {
-        if (baseConfig.appRunCount % 40 == 0 && !baseConfig.wasAppRated) {
-            if (!resources.getBoolean(R.bool.hide_google_relations)) {
-                RateStarsDialog(this)
-            }
-        }
-    }
+    
 }
 
 fun Activity.isAppInstalledOnSDCard(): Boolean = try {
