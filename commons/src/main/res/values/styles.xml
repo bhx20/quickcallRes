@@ -195,6 +195,7 @@
 
     <style name="AppTheme.ActionBar.TitleTextStyle">
         <item name="android:textSize">@dimen/actionbar_text_size</item>
+        <item name="android:textColor">@color/hint_black</item>
     </style>
 
     <style name="SpinnerItem" parent="@android:style/Widget.TextView">
