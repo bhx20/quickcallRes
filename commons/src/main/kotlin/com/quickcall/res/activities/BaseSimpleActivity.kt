@@ -125,7 +125,6 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
         } else if (!isMaterialActivity) {
             updateActionbarColor(getProperBackgroundColor())
         }
-        updateRecentsAppIcon()
 
         if (updateNavigationBarColor) {
             var navBarColor = getProperBackgroundColor()
@@ -439,22 +438,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
         }
     }
 
-    fun updateRecentsAppIcon() {
-        if (baseConfig.isUsingModifiedAppIcon) {
-            val appIconIDs = getAppIconIDs()
-            val currentAppIconColorIndex = getCurrentAppIconColorIndex()
-            if (appIconIDs.size - 1 < currentAppIconColorIndex) {
-                return
-            }
 
-            val recentsIcon = BitmapFactory.decodeResource(resources, appIconIDs[currentAppIconColorIndex])
-            val title = getAppLauncherName()
-            val color = getProperBackgroundColor()
-
-            val description = ActivityManager.TaskDescription(title, recentsIcon, color)
-            setTaskDescription(description)
-        }
-    }
 
     fun updateMenuItemColors(menu: Menu?, baseColor: Int = getProperBackgroundColor() /*getProperStatusBarColor()*/, forceWhiteIcons: Boolean = false,
                              noContrastColor: Boolean = false) {
@@ -685,77 +669,8 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
         }
     }
 
-    fun startAboutActivity(
-        appNameId: Int,
-        licenseMask: Long,
-        versionName: String,
-        faqItems: ArrayList<FAQItem>,
-        showFAQBeforeMail: Boolean,
-        productIdList: ArrayList<String>, productIdListRu: ArrayList<String>,
-        subscriptionIdList: ArrayList<String>, subscriptionIdListRu: ArrayList<String>,
-        subscriptionYearIdList: ArrayList<String>, subscriptionYearIdListRu: ArrayList<String>,
-        playStoreInstalled: Boolean = true,
-        ruStoreInstalled: Boolean = false
-    ) {
-        hideKeyboard()
-        Intent(applicationContext, AboutActivity::class.java).apply {
-            putExtra(APP_ICON_IDS, getAppIconIDs())
-            putExtra(APP_LAUNCHER_NAME, getAppLauncherName())
-            putExtra(APP_NAME, getString(appNameId))
-            putExtra(APP_REPOSITORY_NAME, getRepositoryName())
-            putExtra(APP_LICENSES, licenseMask)
-            putExtra(APP_VERSION_NAME, versionName)
-            putExtra(APP_PACKAGE_NAME, baseConfig.appId)
-            putExtra(APP_FAQ, faqItems)
-            putExtra(SHOW_FAQ_BEFORE_MAIL, showFAQBeforeMail)
-            
-            putExtra(PRODUCT_ID_LIST, productIdList)
-            putExtra(PRODUCT_ID_LIST_RU, productIdListRu)
-            putExtra(SUBSCRIPTION_ID_LIST, subscriptionIdList)
-            putExtra(SUBSCRIPTION_ID_LIST_RU, subscriptionIdListRu)
-            putExtra(SUBSCRIPTION_YEAR_ID_LIST, subscriptionYearIdList)
-            putExtra(SUBSCRIPTION_YEAR_ID_LIST_RU, subscriptionYearIdListRu)
-            putExtra(PLAY_STORE_INSTALLED, playStoreInstalled)
-            putExtra(RU_STORE, ruStoreInstalled)
-            startActivity(this)
-        }
-    }
 
-    fun startPurchaseActivity(appNameId: Int,
-                              productIdList: ArrayList<String>, productIdListRu: ArrayList<String>,
-                              subscriptionIdList: ArrayList<String>, subscriptionIdListRu: ArrayList<String>,
-                              subscriptionYearIdList: ArrayList<String>, subscriptionYearIdListRu: ArrayList<String>,
-                              showLifebuoy: Boolean = resources.getBoolean(R.bool.show_lifebuoy),
-                              playStoreInstalled: Boolean = true,
-                              ruStoreInstalled: Boolean = false,
-                              showCollection: Boolean = resources.getBoolean(R.bool.show_collection)) {
 
-    }
-
-    fun startCustomizationActivity(showAccentColor : Boolean = false, isCollection : Boolean = false,
-                                   productIdList: ArrayList<String> = arrayListOf("", "", ""), productIdListRu: ArrayList<String> = arrayListOf("", "", ""),
-                                   subscriptionIdList: ArrayList<String> = arrayListOf("", "", ""), subscriptionIdListRu: ArrayList<String> = arrayListOf("", "", ""),
-                                   subscriptionYearIdList: ArrayList<String> = arrayListOf("", "", ""), subscriptionYearIdListRu: ArrayList<String> = arrayListOf("", "", ""),
-                                   playStoreInstalled: Boolean = true, ruStoreInstalled: Boolean = false,
-                                   showAppIconColor : Boolean = false
-    ) {
-        Intent(applicationContext, CustomizationActivity::class.java).apply {
-            putExtra(APP_ICON_IDS, getAppIconIDs())
-            putExtra(APP_LAUNCHER_NAME, getAppLauncherName())
-            putExtra(SHOW_ACCENT_COLOR, showAccentColor)
-            putExtra(IS_COLLECTION, isCollection)
-            putExtra(PRODUCT_ID_LIST, productIdList)
-            putExtra(PRODUCT_ID_LIST_RU, productIdListRu)
-            putExtra(SUBSCRIPTION_ID_LIST, subscriptionIdList)
-            putExtra(SUBSCRIPTION_ID_LIST_RU, subscriptionIdListRu)
-            putExtra(SUBSCRIPTION_YEAR_ID_LIST, subscriptionYearIdList)
-            putExtra(SUBSCRIPTION_YEAR_ID_LIST_RU, subscriptionYearIdListRu)
-            putExtra(PLAY_STORE_INSTALLED, playStoreInstalled)
-            putExtra(RU_STORE, ruStoreInstalled)
-            putExtra(SHOW_APP_ICON_COLOR, showAppIconColor)
-            startActivity(this)
-        }
-    }
 
     @RequiresApi(Build.VERSION_CODES.O)
     fun launchCustomizeNotificationsIntent() {
@@ -1278,10 +1193,6 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
 
     @SuppressLint("UseCompatLoadingForDrawables")
     fun getAppIcon(currentAppIconColorIndex: Int = getCurrentAppIconColorIndex()): Drawable {
-        val appIconIDs = getAppIconIDs()
-        if (appIconIDs.size - 1 < currentAppIconColorIndex) {
-            return resources.getDrawable(R.drawable.ic_launcher)
-        }
-        return resources.getDrawable(appIconIDs[currentAppIconColorIndex])
+        return  resources.getDrawable(R.drawable.ic_launcher)
     }
 }

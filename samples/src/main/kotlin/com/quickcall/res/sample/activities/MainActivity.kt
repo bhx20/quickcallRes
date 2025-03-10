@@ -36,7 +36,7 @@ class MainActivity : BaseSimpleActivity() {
                 val showMoreApps = onEventValue { !resources.getBoolean(com.quickcall.res.R.bool.hide_google_relations) }
 
                 MainScreen(
-                    openColorCustomization = ::startCustomizationActivity,
+                    openColorCustomization = ::simpleEmpty,
                     manageBlockedNumbers = {
                         startActivity(Intent(this@MainActivity, ManageBlockedNumbersActivity::class.java))
                     },
@@ -45,9 +45,9 @@ class MainActivity : BaseSimpleActivity() {
                     },
                     openTestButton = ::setupStartDate,
                     showMoreApps = showMoreApps,
-                    openAbout = ::launchAbout,
+                    openAbout = ::simpleEmpty,
                     moreAppsFromUs = ::launchMoreAppsFromUsIntent,
-                    startPurchaseActivity = ::launchPurchase,
+                    startPurchaseActivity = ::simpleEmpty,
                     isTopAppBarColorIcon = isTopAppBarColorIcon,
                 )
                 AppLaunched()
@@ -74,75 +74,7 @@ class MainActivity : BaseSimpleActivity() {
         }
     }
 
-    private fun startCustomizationActivity() {
-        startCustomizationActivity(
-            showAccentColor = true,
-            isCollection = false,
-            productIdList = arrayListOf("", "", ""),
-            productIdListRu = arrayListOf("", "", ""),
-            subscriptionIdList = arrayListOf("", "", ""),
-            subscriptionIdListRu = arrayListOf("", "", ""),
-            subscriptionYearIdList = arrayListOf("", "", ""),
-            subscriptionYearIdListRu = arrayListOf("", "", ""),
-            playStoreInstalled = isPlayStoreInstalled(),
-            ruStoreInstalled = isRuStoreInstalled(),
-            showAppIconColor = true
-        )
-    }
 
-    private fun launchPurchase() {
-        startPurchaseActivity(
-            R.string.app_name_g,
-            productIdList = arrayListOf("", "", ""),
-            productIdListRu = arrayListOf("", "", ""),
-            subscriptionIdList = arrayListOf("", "", ""),
-            subscriptionIdListRu = arrayListOf("", "", ""),
-            subscriptionYearIdList = arrayListOf("", "", ""),
-            subscriptionYearIdListRu = arrayListOf("", "", ""),
-            showLifebuoy = false,
-            playStoreInstalled = isPlayStoreInstalled(),
-            ruStoreInstalled = isRuStoreInstalled(),
-            showCollection = true
-        )
-    }
-
-    private fun launchAbout() {
-        val licenses = LICENSE_AUTOFITTEXTVIEW
-
-        val faqItems = arrayListOf(
-            FAQItem(com.quickcall.res.R.string.faq_1_title_commons, com.quickcall.res.R.string.faq_1_text_commons),
-            FAQItem(com.quickcall.res.R.string.faq_4_title_commons, com.quickcall.res.R.string.faq_4_text_commons)
-        )
-
-        if (!resources.getBoolean(com.quickcall.res.R.bool.hide_google_relations)) {
-            faqItems.add(FAQItem(com.quickcall.res.R.string.faq_2_title_commons, com.quickcall.res.R.string.faq_2_text_commons))
-            faqItems.add(FAQItem(com.quickcall.res.R.string.faq_6_title_commons, com.quickcall.res.R.string.faq_6_text_commons))
-        }
-
-        startAboutActivity(
-            R.string.app_name_g,
-            licenses,
-            BuildConfig.VERSION_NAME,
-            faqItems,
-            true,
-            arrayListOf("", "", ""), arrayListOf("", "", ""),
-            arrayListOf("", "", ""), arrayListOf("", "", ""),
-            arrayListOf("", "", ""), arrayListOf("", "", ""),
-            playStoreInstalled = isPlayStoreInstalled(),
-            ruStoreInstalled = isRuStoreInstalled())
-    }
-
-    private fun securityDialog() {
-        val tabToShow = if (config.isAppPasswordProtectionOn) config.appProtectionType else SHOW_ALL_TABS
-        SecurityDialog(this@MainActivity, config.appPasswordHash, tabToShow) { hash, type, success ->
-            if (success) {
-                val hasPasswordProtection = config.isAppPasswordProtectionOn
-                config.isAppPasswordProtectionOn = !hasPasswordProtection
-                config.appPasswordHash = if (hasPasswordProtection) "" else hash
-                config.appProtectionType = type
-            }
-        }
-    }
 
     private fun setupStartDate() {
         hideKeyboard()
@@ -152,6 +84,8 @@ class MainActivity : BaseSimpleActivity() {
 
         datePicker.show()
     }
+
+    fun simpleEmpty(){}
 
     private val startDateSetListener = DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
     }
