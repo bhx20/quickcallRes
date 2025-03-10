@@ -46,7 +46,7 @@ class MainActivity : BaseSimpleActivity() {
                     openTestButton = ::setupStartDate,
                     showMoreApps = showMoreApps,
                     openAbout = ::simpleEmpty,
-                    moreAppsFromUs = ::launchMoreAppsFromUsIntent,
+                    moreAppsFromUs = ::simpleEmpty,
                     startPurchaseActivity = ::simpleEmpty,
                     isTopAppBarColorIcon = isTopAppBarColorIcon,
                 )
@@ -70,11 +70,13 @@ class MainActivity : BaseSimpleActivity() {
     private fun setupStartDate() {
         hideKeyboard()
         val datePicker = DatePickerDialog(
-            this, getDatePickerDialogTheme(), startDateSetListener, 2024, 12, 30
+            this, getDatePickerDialogTheme(), startDateSetListener, 2013, 5, 6
         )
 
         datePicker.show()
     }
+
+    override fun getAppLauncherName() = getString(R.string.commons_app_name)
 
     fun simpleEmpty(){}
 

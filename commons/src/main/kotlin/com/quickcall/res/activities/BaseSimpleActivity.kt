@@ -66,8 +66,8 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
     var isAskingPermissions = false
     var useDynamicTheme = true
     var useChangeAutoTheme = true
-    var showTransparentTop = false      // TODO Theme bar top color
-    var isMaterialActivity = false      // by material activity we mean translucent navigation bar and opaque status and action bars
+    var showTransparentTop = false
+    var isMaterialActivity = false
     var updateNavigationBarColor = true
     var checkedDocumentPath = ""
     var currentScrollY = 0
@@ -97,6 +97,7 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
     }
 
 
+    abstract fun getAppLauncherName(): String
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
