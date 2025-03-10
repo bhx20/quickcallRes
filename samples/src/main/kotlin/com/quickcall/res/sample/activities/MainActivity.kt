@@ -56,23 +56,14 @@ class MainActivity : BaseSimpleActivity() {
     }
 
     @Composable
-    private fun AppLaunched(
-        rateStarsAlertDialogState: AlertDialogState = getRateStarsAlertDialogState(),
-    ) {
+    private fun AppLaunched() {
         LaunchedEffect(Unit) {
             appLaunchedCompose(
                 appId = BuildConfig.APPLICATION_ID,
-                showRateUsDialog = rateStarsAlertDialogState::show,
             )
         }
     }
 
-    @Composable
-    private fun getRateStarsAlertDialogState() = rememberAlertDialogState().apply {
-        DialogMember {
-            RateStarsAlertDialog(alertDialogState = this, onRating = ::rateStarsRedirectAndThankYou)
-        }
-    }
 
 
 
@@ -90,22 +81,4 @@ class MainActivity : BaseSimpleActivity() {
     private val startDateSetListener = DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
     }
 
-    override fun getAppLauncherName() = getString(R.string.commons_app_name)
-
-    override fun getAppIconIDs() = arrayListOf(
-        R.mipmap.ic_launcher,
-        R.mipmap.ic_launcher_one,
-        R.mipmap.ic_launcher_two,
-        R.mipmap.ic_launcher_three,
-        R.mipmap.ic_launcher_four,
-        R.mipmap.ic_launcher_five,
-        R.mipmap.ic_launcher_six,
-        R.mipmap.ic_launcher_seven,
-        R.mipmap.ic_launcher_eight,
-        R.mipmap.ic_launcher_nine,
-        R.mipmap.ic_launcher_ten,
-        R.mipmap.ic_launcher_eleven
-    )
-
-    override fun getRepositoryName() = "Gallery"
 }

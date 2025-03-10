@@ -47,11 +47,6 @@ class ManageBlockedNumbersActivity : BaseSimpleActivity() {
         private const val PICK_EXPORT_FILE_INTENT = 21
     }
 
-    override fun getAppIconIDs() = intent.getIntegerArrayListExtra(APP_ICON_IDS) ?: ArrayList()
-
-    override fun getAppLauncherName() = intent.getStringExtra(APP_LAUNCHER_NAME) ?: ""
-
-    override fun getRepositoryName() = null
 
     private val manageBlockedNumbersViewModel by viewModels<ManageBlockedNumbersViewModel>()
 

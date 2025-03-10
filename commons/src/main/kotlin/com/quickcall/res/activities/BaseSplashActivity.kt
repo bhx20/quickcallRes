@@ -10,16 +10,6 @@ abstract class BaseSplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-//        if (baseConfig.appSideloadingStatus == SIDELOADING_UNCHECKED) {
-//            if (checkAppSideloading()) {
-//                return
-//            }
-//        } else if (baseConfig.appSideloadingStatus == SIDELOADING_TRUE) {
-//            showSideloadingDialog()
-//            return
-//        }
-
         syncGlobalConfig {
             baseConfig.apply {
                 if (isAutoTheme()) {

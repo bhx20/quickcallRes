@@ -96,11 +96,8 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
         var funAfterManageMediaPermission: (() -> Unit)? = null
     }
 
-    abstract fun getAppIconIDs(): ArrayList<Int>
 
-    abstract fun getAppLauncherName(): String
 
-    abstract fun getRepositoryName(): String?
 
     override fun onCreate(savedInstanceState: Bundle?) {
         if (useDynamicTheme) {
@@ -133,7 +130,6 @@ abstract class BaseSimpleActivity : AppCompatActivity() {
             }
 
             updateNavigationBarColor(navBarColor)
-            maybeLaunchAppUnlockActivity(requestCode = REQUEST_APP_UNLOCK)
         }
     }
 

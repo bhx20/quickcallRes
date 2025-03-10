@@ -15,59 +15,14 @@ import com.quickcall.res.helpers.APP_ICON_ORIGINAL
 import com.quickcall.res.helpers.isOreoMr1Plus
 import com.quickcall.res.models.Release
 
-fun ComponentActivity.appLaunchedCompose(
-    appId: String,
-    showRateUsDialog: () -> Unit
-) {
+fun ComponentActivity.appLaunchedCompose(appId: String) {
     baseConfig.internalStoragePath = getInternalStoragePath()
     updateSDCardPath()
     baseConfig.appId = appId
-    if (baseConfig.appRunCount == 0) {
-        baseConfig.wasOrangeIconChecked = true
-        checkAppIconColor()
-    } else if (!baseConfig.wasOrangeIconChecked) {
-        baseConfig.wasOrangeIconChecked = true
-        if (baseConfig.appIconColor != APP_ICON_ORIGINAL) {
-            getAppIconColors().forEachIndexed { index, color ->
-                toggleAppIconColor(appId, index, color, false)
-            }
-
-            val defaultClassName = "${baseConfig.appId.removeSuffix(".debug")}.activities.SplashActivity"
-            packageManager.setComponentEnabledSetting(
-                ComponentName(baseConfig.appId, defaultClassName),
-                PackageManager.COMPONENT_ENABLED_STATE_DEFAULT,
-                PackageManager.DONT_KILL_APP
-            )
-
-            val orangeClassName = "${baseConfig.appId.removeSuffix(".debug")}.activities.SplashActivity.Original"
-            packageManager.setComponentEnabledSetting(
-                ComponentName(baseConfig.appId, orangeClassName),
-                PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
-                PackageManager.DONT_KILL_APP
-            )
-
-            baseConfig.appIconColor = APP_ICON_ORIGINAL
-            baseConfig.lastIconColor = APP_ICON_ORIGINAL
-        }
-    }
-
     baseConfig.appRunCount++
-//    if (baseConfig.appRunCount % 30 == 0 && !isPro()) {
-//        if (!resources.getBoolean(R.bool.hide_google_relations)) {
-//            if (getCanAppBeUpgraded()) {
-//                showUpgradeDialog()
-//            } else if (!isOrWasThankYouInstalled()) {
-//                showDonateDialog()
-//            }
-//        }
-//    }
-
-    if (baseConfig.appRunCount % 40 == 0 && !baseConfig.wasAppRated) {
-        if (!resources.getBoolean(R.bool.hide_google_relations)) {
-            showRateUsDialog()
-        }
-    }
 }
+
+
 
 fun ComponentActivity.checkWhatsNewCompose(releases: List<Release>, currVersion: Int, showWhatsNewDialog: (List<Release>) -> Unit) {
     if (baseConfig.lastVersion == 0) {
